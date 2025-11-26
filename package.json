@@ -1,0 +1,41 @@
+{
+  "name": "@rendevo/sdk",
+  "version": "1.0.0",
+  "description": "TypeScript SDK for Rendevo API",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src --ext .ts",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "rendevo",
+    "api",
+    "sdk",
+    "typescript"
+  ],
+  "author": "Rendevo Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@vitest/coverage-v8": "^2.1.0",
+    "@vitest/ui": "^2.1.0",
+    "happy-dom": "^15.7.0",
+    "typescript": "^5.3.0",
+    "vitest": "^2.1.0"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
